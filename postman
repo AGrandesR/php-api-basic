@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "f70fc27e-4a46-49f2-b1b1-c72fe9272727",
+		"name": "php-basic-template",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25039257",
+		"_collection_link": "https://red-spaceship-531431.postman.co/workspace/Friendly-Toolkit---Endpoints~3fa4e450-a401-4fdf-80e4-7974f4335a3c/collection/25039257-f70fc27e-4a46-49f2-b1b1-c72fe9272727?action=share&creator=25039257&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Preregister (register.php)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "agrandes11@outlook.es",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "1312312312",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{security.friendlytoolkit.com}}/register",
+					"host": [
+						"{{security.friendlytoolkit.com}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register (register.php)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "agrandes11@outlook.es",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "1312312312",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{security.friendlytoolkit.com}}/register/11111111",
+					"host": [
+						"{{security.friendlytoolkit.com}}"
+					],
+					"path": [
+						"register",
+						"11111111"
+					]
+				},
+				"description": "This is an example of a url that is sended into the mail"
+			},
+			"response": []
+		},
+		{
+			"name": "Login (login.php)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "agrandes11@outlook.es",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "*bash123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{security.friendlytoolkit.com}}/login.php",
+					"host": [
+						"{{security.friendlytoolkit.com}}"
+					],
+					"path": [
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test (index.php)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJpdiI6IjN0TERlR0VwUEN3XC84UjR1ek93bmlRPT0iLCJkYXRhIjoiZkl3WDNseG9pRlFSXC81XC9YNFlVOHo4c1wvRGJmMUEzZkxJMVwvUlE2MmJcL0pFNVd4TEhBUStaTFlVRzhlMFRDYXMwUzFXZWRhWXFrWkRscFJESnBXY2dMV2NuTnYwRGc4b0pmRkFVaGVFS25JZz0ifQ==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{security.friendlytoolkit.com}}/index.php",
+					"host": [
+						"{{security.friendlytoolkit.com}}"
+					],
+					"path": [
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
